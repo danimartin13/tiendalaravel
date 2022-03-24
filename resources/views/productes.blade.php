@@ -1,9 +1,9 @@
 @extends('inicio')
 
 @section('titulo')
-    home
+    productes
 @endsection
 
 @section('content')
-    <h1>Home</h1>
+    <h1>Productos</h1>
 @endsection
