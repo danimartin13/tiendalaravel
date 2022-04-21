@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,15 +16,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/productes', function () {
-    return view('productes');
-});
-Route::get('/categories', function () {
-    return view('categories');
-});
+
+
+
+
+Route::get('/categorias', [CategoriaController::class, 'listar'])->name("listarCategorias");
+Route::get('/productos', [ProductoController::class, 'listar'])->name("listarProductos");
+
+
 Route::get('/ventas', function () {
     return view('ventas');
 });
+Auth::routes();
+
+Route::get('/', [HomeController::class,'index'])->name('home');
+
+
+//anadir categoria
+Route::post('/nuevaCategoria', [CategoriaController::class, 'anadircategoria'])->name('anadircategoria');
+//BORRAR CATEGOIRA
+Route::delete('/eliminarCategoria{categoria}', [CategoriaController::class, 'eliminarcategoria'])->name('eliminarcategoria');
+
+//anadir categoria
+Route::post('/nuevaProducto', [ProductoController::class, 'anadirproducto'])->name('anadirproducto');

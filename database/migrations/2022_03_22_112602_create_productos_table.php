@@ -18,8 +18,9 @@ class CreateProductosTable extends Migration
             $table->integer('stock');
             $table->string('foto');
             $table->string('nombre');
-            $table->integer('categoria');
             $table->string('descripcion');
+            $table->foreignId('id_categoria');
+            $table->foreign('id_categoria')->references('id')->on('categorias')->onDelete('cascade');
         });
     }
 

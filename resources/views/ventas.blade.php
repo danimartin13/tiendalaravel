@@ -5,5 +5,5 @@
 @endsection
 
 @section('content')
-    <h1>ventas T</h1>
+    <h1>ventas</h1>
 @endsection

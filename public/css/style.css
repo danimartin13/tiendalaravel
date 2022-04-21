@@ -26,3 +26,42 @@ footer{
     height: 40px;
     color: white;
 }
+table, th, tr, td{
+    border: 1px solid black;
+}
+.general{
+    margin: 20px;
+}
+table{
+    margin: 10px;
+}
+.imagenproductos{
+    /* width: 100px; */
+    height: 100px; 
+}
+.general{
+    display: flex;
+}
+.mediapa{
+    width: 50%;
+}
+.subheader{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(21, 16, 16);
+}
+.productoshome{
+    display: flex;
+    background-color: blue;
+    width: 1000px;
+    margin: auto;
+    height: 1000px;
+}
+.claseproducto{
+    color: white;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    background-color: black;
+    height: 200px;
+}
