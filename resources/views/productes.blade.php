@@ -29,6 +29,7 @@
                         <td>{{$producto->stock}}</td>
                         <td><img class="imagenproductos" src="fotos/{{$producto->id}}/{{$producto->foto}}" alt=""> </td>
                         <td>{{$producto->nombre}}</td>
+                        <td>{{$producto->precio}}</td>
                         <td>{{$producto->descripcion}}</td>
                         <td>{{$producto->id_categoria}}</td>
                         <td>bloquear</td>
@@ -50,6 +51,8 @@
                     <input type="file" name="foto"></label><br>
                 <label for="">nombre
                     <input type="text" name="nombre" id=""></label><br>
+                <label for="">precio
+                    <input type="number" name="precio" id=""></label><br>
                 <label for="">descripcion
                     <input type="text" name="descripcion" id=""></label><br>
                 <label for="">id_categoria

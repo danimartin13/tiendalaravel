@@ -51,7 +51,7 @@ table{
     background-color: rgb(21, 16, 16);
 }
 .productoshome{
-    display: flex;
+    /* display: inline-block; */
     background-color: blue;
     width: 1000px;
     margin: auto;
@@ -63,5 +63,20 @@ table{
     padding: 20px;
     margin: 10px;
     background-color: black;
-    height: 200px;
+    height: 300px;
+    border-radius: 25px;
+    display: inline-block;
+    text-align: center;
+}
+.homeimagenproductos{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.unidades{
+    width: 100px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: red;
+    margin-left: 190px;
 }

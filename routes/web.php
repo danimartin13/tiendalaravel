@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\HomeController;
 
 /*
@@ -30,6 +31,7 @@ Route::get('/ventas', function () {
 Auth::routes();
 
 Route::get('/', [HomeController::class,'index'])->name('home');
+Route::get('/categoria-{categoria}', [CategoriaController::class,'listarProductos'])->name('categoria');
 
 
 //anadir categoria
@@ -39,3 +41,15 @@ Route::delete('/eliminarCategoria{categoria}', [CategoriaController::class, 'eli
 
 //anadir categoria
 Route::post('/nuevaProducto', [ProductoController::class, 'anadirproducto'])->name('anadirproducto');
+
+//inicio de sesion
+Route::get('/iniciosesion', [UsuarioController::class,'iniciosesion'])->name('iniciosesion');
+
+//inicio de sesion
+Route::get('/registrarse', [UsuarioController::class,'registrarse'])->name('registrarse');
+
+//comprobar inicio
+Route::get('/iniciosesion', [UsuarioController::class,'comprinicio'])->name('comprinicio');
+
+//compregis
+Route::get('/registrarse', [UsuarioController::class,'compregis'])->name('compregis');

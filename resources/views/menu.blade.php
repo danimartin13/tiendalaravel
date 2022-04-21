@@ -12,7 +12,7 @@
     <nav class="headeer">
         <a href="/">Imagen logotipo</a>
         <ul class="likhea">
-            <a href="/categorias"><li class="lis">Iniciar sesion</li></a>
+            <a href="/iniciosesion"><li class="lis">Iniciar sesion</li></a>
             <a href="/productos"><li class="lis">carrito</li></a>
             
         </ul>

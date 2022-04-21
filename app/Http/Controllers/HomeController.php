@@ -33,14 +33,6 @@ class HomeController extends Controller
             'categorias'=>$categorias
         ]);
     }
+    // inicio-sesion
+ 
 }
-/*public function listar(){
-    $productos = Producto::get();
-    $categorias = Categoria::get();
-     return view('productes',
-     [
-         'productos'=>$productos,
-         'categorias'=>$categorias
-     ]);
-     //echo "Hola";
- }*/

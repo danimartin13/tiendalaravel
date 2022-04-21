@@ -26,6 +26,7 @@ class ProductoController extends Controller
             $productonueva ->stock = $request->stock;
             $productonueva ->foto = $_FILES["foto"]['name'];
             $productonueva ->nombre = $request->nombre;
+            $productonueva ->precio = $request->precio;
             $productonueva ->descripcion = $request->descripcion;
             $productonueva ->id_categoria = $request->id_categoria;
             $productonueva -> save();
