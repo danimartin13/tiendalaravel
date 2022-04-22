@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Usuario;
 use Illuminate\Http\Request;
 
 class UsuarioController extends Controller
@@ -19,6 +19,10 @@ class UsuarioController extends Controller
     }
 
     public function compregis(Request $request){
-        return view('compregis');
+        $productonueva = new Usuario;
+        $productonueva -> nombre = $request->nombre;
+        $productonueva -> password = $request->password;
+        $productonueva -> rol = 2;
+        $productonueva -> save();
     }
 }

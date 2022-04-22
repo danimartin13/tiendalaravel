@@ -16,6 +16,7 @@
                     <td>stock</td>
                     <td>foto</td>
                     <td>nombre</td>
+                    <td>precio</td>
                     <td>descripcion</td>
                     <td>id_categoria</td>
                     <td>bloquear</td>

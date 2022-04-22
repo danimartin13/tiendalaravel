@@ -39,6 +39,10 @@ Route::post('/nuevaCategoria', [CategoriaController::class, 'anadircategoria'])-
 //BORRAR CATEGOIRA
 Route::delete('/eliminarCategoria{categoria}', [CategoriaController::class, 'eliminarcategoria'])->name('eliminarcategoria');
 
+//actualizar categoria
+
+Route::patch('/actcategoria-{categoria}', [CategoriaController::class, 'actcategoria'])->name('actcategoria');
+
 //anadir categoria
 Route::post('/nuevaProducto', [ProductoController::class, 'anadirproducto'])->name('anadirproducto');
 
@@ -49,7 +53,7 @@ Route::get('/iniciosesion', [UsuarioController::class,'iniciosesion'])->name('in
 Route::get('/registrarse', [UsuarioController::class,'registrarse'])->name('registrarse');
 
 //comprobar inicio
-Route::get('/iniciosesion', [UsuarioController::class,'comprinicio'])->name('comprinicio');
+//Route::get('/iniciosesion', [UsuarioController::class,'comprinicio'])->name('comprinicio');
 
 //compregis
-Route::get('/registrarse', [UsuarioController::class,'compregis'])->name('compregis');
+Route::post('/nuevoregistro', [UsuarioController::class,'compregis'])->name('compregis');

@@ -25,7 +25,7 @@ class HomeController extends Controller
      */
     public function index(){
     $productos = Producto::get();
-    $categorias = Categoria::get();
+    $categorias = Categoria::where('estado','!=','2')->get();
     
         return view('home', 
         [
